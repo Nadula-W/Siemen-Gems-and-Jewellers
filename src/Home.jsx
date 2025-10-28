@@ -1,7 +1,5 @@
 import React from "react";
-import pic1 from "./pic1.png";
 import NavBar from "./Components/NavBar";
-// 1. IMPORT motion
 import { motion } from 'framer-motion';
 
 const fadeInVariants = {
@@ -86,7 +84,7 @@ export default function Home() {
           <div className="absolute w-80 h-80 bg-gradient-to-br from-[#D4AF37]/40 to-transparent blur-3xl rounded-full top-10 animate-pulse-slow"></div>
           
           <img
-            src={pic1}
+            src="/images/Headerimg.png"
             alt="Fine gold jewellery with Ceylon sapphire and emeralds"
             width={450} 
             height={450}

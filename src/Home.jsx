@@ -66,7 +66,7 @@ export default function Home() {
           {/* Button */}
           <motion.div variants={gridItemVariants} className="mt-10 flex gap-5">
             <a
-              href="#"
+              href="/RawGems"
               role="button"
               className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-bold uppercase tracking-wider px-8 py-3 rounded-full transition-all duration-300"
             >

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navItems = [
     { name: "Home", href: "/" },
     { name: "Raw Gem Stones", href: "/RawGems" },
-    { name: "Gems", href: "#" },
+    { name: "Gems", href: "/CutandPolished" },
     { name: "Jewellery", href: "#" },
     { name: "Contact", href: "#" },
 ];
@@ -85,12 +85,12 @@ export default function NavBar() {
                         exit="exit"
                         className="fixed inset-0 top-24 bg-black/95 backdrop-blur-md lg:hidden z-40 p-6"
                     >
-                        <ul className="flex flex-col gap-6 uppercase text-lg text-white tracking-wider font-bold">
+                        <ul className="flex flex-col gap-6 uppercase text-lg text-white tracking-wider font-bold bg-black">
                             {navItems.map((item) => (
                                 <li key={item.name} className="border-b border-white/10 pb-4">
                                     <a 
                                         href={item.href} 
-                                        className="block hover:text-[#FFD700] transition-colors"
+                                        className="block hover:text-[#FFD700] transition-colors bg-black"
                                         onClick={() => setIsOpen(false)} // Close menu on click
                                     >
                                         {item.name}

@@ -130,7 +130,7 @@ export default function Home() {
             </motion.a>
 
             {/* GEMS - ANIMATED */}
-            <motion.a href="#" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
+            <motion.a href="CutandPolished" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
               <img
                 src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png"
                 alt="Luxury Collections"

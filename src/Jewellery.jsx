@@ -2,37 +2,35 @@ import React, { useMemo, useState } from "react";
 import NavBar from "./Components/NavBar";
 import { motion } from "framer-motion";
 
-// Fade-up for the grid
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
+const ITEMS = {
+  Necklaces: [
+    { id: 1, name: "Celestial Pendant Necklace", img: "/images/jewels/necklace-1.jpg", desc: "14k gold chain with sapphire accent." },
+    { id: 2, name: "Pearl Strand", img: "/images/jewels/necklace-2.jpg", desc: "Lustrous freshwater pearls." },
+    { id: 3, name: "Diamond Solitaire", img: "/images/jewels/necklace-3.jpg", desc: "Classic solitaire on platinum chain." },
+  ],
+  Rings: [
+    { id: 4, name: "Emerald Eternity Band", img: "/images/jewels/ring-1.jpg", desc: "White gold band with full-circle emeralds." },
+    { id: 5, name: "Rose Gold Stack", img: "/images/jewels/ring-2.jpg", desc: "Minimal, perfect for stacking." },
+    { id: 6, name: "Garnet Signet", img: "/images/jewels/ring-3.jpg", desc: "Sterling silver with deep red garnet." },
+  ],
+  Pendants: [
+    { id: 7, name: "Moonstone Glow Pendant", img: "/images/jewels/pendant-1.jpg", desc: "Ethereal iridescence, bezel set." },
+    { id: 8, name: "Pink Sapphire Heart", img: "/images/jewels/pendant-2.jpg", desc: "Romantic hues, fine finish." },
+    { id: 9, name: "Blue Sapphire Teardrop", img: "/images/jewels/pendant-3.jpg", desc: "Oceanic brilliance in teardrop cut." },
+  ],
+};
+
+
 export default function Jewellery() {
   const categories = ["Necklaces", "Rings", "Pendants"];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
-  // Keep items INSIDE the component
-  const ITEMS = {
-    Necklaces: [
-      { id: 1, name: "Celestial Pendant Necklace", img: "/images/jewels/necklace-1.jpg", desc: "14k gold chain with sapphire accent." },
-      { id: 2, name: "Pearl Strand", img: "/images/jewels/necklace-2.jpg", desc: "Lustrous freshwater pearls." },
-      { id: 3, name: "Diamond Solitaire", img: "/images/jewels/necklace-3.jpg", desc: "Classic solitaire on platinum chain." },
-    ],
-    Rings: [
-      { id: 4, name: "Emerald Eternity Band", img: "/images/jewels/ring-1.jpg", desc: "White gold band with full-circle emeralds." },
-      { id: 5, name: "Rose Gold Stack", img: "/images/jewels/ring-2.jpg", desc: "Minimal, perfect for stacking." },
-      { id: 6, name: "Garnet Signet", img: "/images/jewels/ring-3.jpg", desc: "Sterling silver with deep red garnet." },
-    ],
-    Pendants: [
-      { id: 7, name: "Moonstone Glow Pendant", img: "/images/jewels/pendant-1.jpg", desc: "Ethereal iridescence, bezel set." },
-      { id: 8, name: "Pink Sapphire Heart", img: "/images/jewels/pendant-2.jpg", desc: "Romantic hues, fine finish." },
-      { id: 9, name: "Blue Sapphire Teardrop", img: "/images/jewels/pendant-3.jpg", desc: "Oceanic brilliance in teardrop cut." },
-    ],
-  };
-
-  // FIX: Added ITEMS to the dependency array to satisfy react-hooks/exhaustive-deps
-  const list = useMemo(() => ITEMS[activeCategory] ?? [], [activeCategory, ITEMS]);
+  const list = useMemo(() => ITEMS[activeCategory] ?? [], [activeCategory]);
 
   return (
     <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#0b0b0b] via-[#111] to-[#000] text-white">
@@ -61,7 +59,6 @@ export default function Jewellery() {
                   ${activeCategory === cat
                     ? "border-b-2 border-[#D4AF37] text-[#D4AF37]"
                     : "text-gray-300 hover:text-[#D4AF37] border-b-2 border-transparent"}`}
-                // FIX: Removed aria-selected, as it is not supported on role="button"
               >
                 {cat}
               </button>

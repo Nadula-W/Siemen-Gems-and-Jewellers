@@ -12,8 +12,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/raw-gems" element={<RawGems />} />
-        <Route path="/cut-and-polished" element={<CutandPolished />} />
+        <Route path="/rawgems" element={<RawGems />} />
+        <Route path="/cutandpolished" element={<CutandPolished />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

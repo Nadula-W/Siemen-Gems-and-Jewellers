@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./Components/NavBar";
 import { motion } from 'framer-motion';
+import "./Home.css"; // Ensure global styles are imported
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -118,7 +119,7 @@ export default function Home() {
             {/* Raw stones - ANIMATED */}
             <motion.a href="RawGems" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
               <img
-                src="https://wallpapercave.com/wp/wp1859872.jpg"
+                src="/images/rawimg.jpg"
                 alt="Ceylon Gems"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -132,7 +133,7 @@ export default function Home() {
             {/* GEMS - ANIMATED */}
             <motion.a href="CutandPolished" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
               <img
-                src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png"
+                src="https://wallpapercave.com/wp/wp1859872.jpg"
                 alt="Luxury Collections"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -144,7 +145,7 @@ export default function Home() {
             </motion.a>
 
             {/* JEWELLERY - ANIMATED */}
-            <motion.a href="#" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
+            <motion.a href="/Jewellery" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s"
                 alt="Fine Jewellery"
@@ -160,90 +161,103 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* -------------------------------------------------------------------------------------------------- */}
-      {/* Explore Our Masterpieces Section 2 (4 items) */}
-      {/* -------------------------------------------------------------------------------------------------- */}
 
-      <motion.section 
-        className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] text-white"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={staggerContainer} // Uses staggerContainer to animate children
-      >
-        <div className="container mx-auto px-6">
-          {/* Header - ANIMATED */}
-          <motion.h2 
-            variants={fadeInVariants} // Use fade-up for the header
-            className="text-4xl font-extrabold text-center mb-14 bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent tracking-wide"
-          >
-            Explore Our Masterpieces
-          </motion.h2>
 
-          {/* Grid Container */}
-          <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* GEMS - ANIMATED */}
-            <motion.a href="#" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
-              <img
-                src="https://wallpapercave.com/wp/wp1859872.jpg"
-                alt="Ceylon Gems"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-[#FFD700] mb-1">Ceylon Gems</h3>
-                  <p className="text-white/80 text-sm">Precious stones of Sri Lanka</p>
-                </div>
-              </div>
-            </motion.a>
+        {/* Explore Our Masterpieces Section  */}
 
-            {/* JEWELLERY - ANIMATED */}
-            <motion.a href="#" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s"
-                alt="Fine Jewellery"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-[#FFD700] mb-1">Fine Jewellery</h3>
-                  <p className="text-white/80 text-sm">Gold, Silver & Platinum designs</p>
-                </div>
-              </div>
-            </motion.a>
 
-            {/* COLLECTIONS - ANIMATED */}
-            <motion.a href="#" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
-              <img
-                src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png"
-                alt="Luxury Collections"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-[#FFD700] mb-1">Luxury Collections</h3>
-                  <p className="text-white/80 text-sm">Timeless beauty for every occasion</p>
-                </div>
-              </div>
-            </motion.a>
+        <section 
+          className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] text-white"
+        >
+          <div className="container mx-auto px-6">
+            {/* Header - RETAINS TAILWIND STYLES */}
+            <h2 
+              className="text-4xl font-extrabold text-center mb-14 bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent tracking-wide"
+            >
+              Explore Our Masterpieces
+            </h2>
 
-            {/* CRAFTSMANSHIP - ANIMATED */}
-            <motion.a href="#" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
-              <img
-                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800"
-                alt="Craftsmanship"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-[#FFD700] mb-1">Craftsmanship</h3>
-                  <p className="text-white/80 text-sm">Kandyan artistry in modern form</p>
-                </div>
-              </div>
-            </motion.a>
-          </motion.div>
-        </div>
-      </motion.section>
+            {/* AUTO-SCROLL Container */}
+            <div 
+              className="flex space-x-8 overflow-x-hidden scrollbar-hide pb-6 auto-scroll-container" 
+            >
+              
+              {/* GEMS */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://wallpapercave.com/wp/wp1859872.jpg" alt="Ceylon Gems" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+
+              {/* JEWELLERY */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s" alt="Fine Jewellery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+
+              {/* COLLECTIONS */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png" alt="Luxury Collections" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+
+              {/* CRAFTSMANSHIP */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800" alt="Craftsmanship" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+              {/* GEMS */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://wallpapercave.com/wp/wp1859872.jpg" alt="Ceylon Gems" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+
+              {/* JEWELLERY */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s" alt="Fine Jewellery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+
+              {/* COLLECTIONS */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png" alt="Luxury Collections" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a>
+
+              {/* CRAFTSMANSHIP */}
+              <a 
+                href="#" 
+                className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
+              >
+                <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800" alt="Craftsmanship" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                
+              </a> 
+            </div >
+          </div>
+        </section>
+
+
+      
     </main>
   );
 }

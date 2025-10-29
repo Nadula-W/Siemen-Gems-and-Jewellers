@@ -18,9 +18,9 @@ const cardVariants = {
 export default function CutandPolished() {
   return (
      <section className="bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] text-white ">
-      
+      <NavBar/>
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl pb-20">
-        <NavBar/>
+        
         
         <div className="max-w-6xl mx-auto text-center pt-10 pb-0">
           <h2 className="text-2xl font-bold text-[#D4AF37] sm:text-4xl font-serif tracking-wide">

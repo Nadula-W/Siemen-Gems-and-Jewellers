@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Menu items for easy mapping
+
 const navItems = [
     { name: "Home", href: "/" },
     { name: "Raw Gem Stones", href: "/RawGems" },
     { name: "Gems", href: "/CutandPolished" },
-    { name: "Jewellery", href: "#" },
+    { name: "Jewellery", href: "/Jewellery" },
     { name: "Contact", href: "#" },
 ];
 
@@ -38,7 +38,7 @@ export default function NavBar() {
     return (
         // Added max-h-screen and overflow-hidden to prevent body scroll when menu is open
         <header className="h-24 flex items-center w-full z-30 border-b border-white/10 backdrop-blur-sm sticky top-0 bg-black/50">
-            <div className="container mx-auto px-6 flex items-center justify-between">
+            <div className="w-full px-10 flex items-center justify-between">
                 <h1 className="uppercase font-black text-2xl tracking-wider text-[#D4AF37]">
                     Sieman Gems and Jewellers
                 </h1>

@@ -35,7 +35,7 @@ export default function CutandPolished() {
           
           {/* APPLY THE ANIMATION TO THE GRID CONTAINER */}
           <motion.div 
-            className="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-6 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 mt-10 lg:mt-16 lg:gap-6 lg:grid-cols-3"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible" // Triggers when element scrolls into view

@@ -31,7 +31,8 @@ export default function Jewellery() {
     ],
   };
 
-  const list = useMemo(() => ITEMS[activeCategory] ?? [], [activeCategory]);
+  // FIX: Added ITEMS to the dependency array to satisfy react-hooks/exhaustive-deps
+  const list = useMemo(() => ITEMS[activeCategory] ?? [], [activeCategory, ITEMS]);
 
   return (
     <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#0b0b0b] via-[#111] to-[#000] text-white">
@@ -60,7 +61,7 @@ export default function Jewellery() {
                   ${activeCategory === cat
                     ? "border-b-2 border-[#D4AF37] text-[#D4AF37]"
                     : "text-gray-300 hover:text-[#D4AF37] border-b-2 border-transparent"}`}
-                aria-selected={activeCategory === cat}
+                // FIX: Removed aria-selected, as it is not supported on role="button"
               >
                 {cat}
               </button>

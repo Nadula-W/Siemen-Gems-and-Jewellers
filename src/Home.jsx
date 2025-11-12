@@ -77,25 +77,23 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-       <motion.div 
-    className="relative lg:w-1/2 flex justify-center"
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
->
-    <div className="overflow-hidden bg-gradient-to-br from-[#D4AF37]/40 to-transparent"> 
-        <img
+        <motion.div 
+            className="relative lg:w-1/2 flex justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+        >
+          <div className="absolute w-80 h-80 bg-gradient-to-br from-[#D4AF37]/40 to-transparent blur-3xl rounded-full top-10 animate-pulse-slow"></div>
+          
+          <img
             src="/images/Headerimg2.png"
             alt="Fine gold jewellery with Ceylon sapphire and emeralds"
-            // Set fixed width and height attributes
             width={450} 
-            height={450} 
+            height={450}
             loading="eager"
-            // Update className to use fixed height and fixed max-width for the square size
-            className="relative w-full h-[450px] max-w-[450px] rounded-lg shadow-[0_0_50px_rgba(212,175,55,0.35)] object-cover transform transition-all duration-1000 ease-in-out lg:max-w-[450px]"
-        />
-    </div>
-</motion.div>
+            className="relative max-w-sm rounded-lg shadow-[0_0_50px_rgba(212,175,55,0.35)] object-cover w-full h-auto transform transition-all duration-1000 ease-in-out lg:max-w-md"
+          />
+        </motion.div>
       </section>
 
     

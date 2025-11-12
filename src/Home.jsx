@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 import { motion } from 'framer-motion';
 import "./Home.css"; // Ensure global styles are imported
 
@@ -95,7 +96,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-    {/* ----------Our Product------------------------------- */}
+    
       <motion.section 
         className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] text-white"
         initial="hidden"
@@ -163,9 +164,7 @@ export default function Home() {
 
 
 
-      {/* Explore Our Masterpieces Section  */}
-
-
+      {/* Explore Our Masterpieces Section  - TITLES MOVED UNDER CARDS */}
       <section 
         className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] text-white"
       >
@@ -179,84 +178,125 @@ export default function Home() {
 
           {/* AUTO-SCROLL Container */}
           <div 
-            className="flex space-x-8 overflow-x-hidden scrollbar-hide pb-6 auto-scroll-container" 
+            className="flex space-x-8 overflow-x-auto scrollbar-hide pb-6 auto-scroll-container" 
           >
+ 
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Gems" 
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/Amethyst polished.jpg"  alt="Amethyst polished" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Amethyst
+                </h3>
+              </div>
+            </div>
+
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Jewellery"
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/jewellery/Blue Sapphire ring.jpg" alt="Blue Sapphire Ring" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Blue Sapphire Ring
+                </h3>
+              </div>
+            </div>
+
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Collections"
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/Rose garnets polished.jpg" alt="Rose Garnet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Rose Garnet
+                </h3>
+              </div>
+            </div>
+
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Craftsmanship" 
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/Moonstone polished.jpg" alt="Moonstone" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Moonstone
+                </h3>
+              </div>
+            </div>
             
-            {/* GEMS */}
-            <a 
-              href="/Gems" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://wallpapercave.com/wp/wp1859872.jpg" alt="Ceylon Gems" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Gems"
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/Blue Sapphire Polished.jpg" alt="Blue Sapphire" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Blue Sapphire
+                </h3>
+              </div>
+            </div>
 
-            {/* JEWELLERY */}
-            <a 
-              href="/Jewellery" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s" alt="Fine Jewellery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Jewellery"
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/jewellery/Geuda Gem ring.jpg" alt="Geuda Gem Ring" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Geuda Gem Ring
+                </h3>
+              </div>
+            </div>
 
-            {/* COLLECTIONS */}
-            <a 
-              href="/Collections" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png" alt="Luxury Collections" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Collections"
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/Pink Sapphire polished.jpg" alt="Pink Sapphire" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Pink Sapphire
+                </h3>
+              </div>
+            </div>
 
-            {/* CRAFTSMANSHIP */}
-            <a 
-              href="/Craftsmanship" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800" alt="Craftsmanship" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
-            {/* GEMS (Repeat) */}
-            <a 
-              href="/Gems" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://wallpapercave.com/wp/wp1859872.jpg" alt="Ceylon Gems" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
-
-            {/* JEWELLERY (Repeat) */}
-            <a 
-              href="/Jewellery" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s" alt="Fine Jewellery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
-
-            {/* COLLECTIONS (Repeat) */}
-            <a 
-              href="/Collections" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://gem-a.com/images/Blog/FromtheArchives/Luxury_Jewellery_Brands_/Cartier_Tutti_Frutti_Necklace.png" alt="Luxury Collections" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a>
-
-            {/* CRAFTSMANSHIP (Repeat) */}
-            <a 
-              href="/Craftsmanship" // FIX: Replaced href="#"
-              className="group relative overflow-hidden rounded-xl h-[480px] flex-shrink-0 w-[300px] sm:w-[360px]"
-            >
-              <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800" alt="Craftsmanship" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-              
-            </a> 
+            <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
+              <a 
+                href="/Craftsmanship"
+                className="group relative overflow-hidden rounded-xl h-[420px] block"
+              >
+                <img src="/images/Amethyst polished.jpg" alt="Amethyst polished duplicate" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
+              </a>
+              <div className="mt-3">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide text-center bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent">
+                  Amethyst
+                </h3>
+              </div>
+            </div> 
           </div >
         </div>
       </section>
 
-
+      <Footer/>
       
     </main>
   );

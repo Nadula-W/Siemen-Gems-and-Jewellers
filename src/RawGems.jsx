@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './Components/NavBar'
 import { motion } from 'framer-motion' 
+import Footer from './Components/Footer';
 
 // Define the variants for the entire product grid (fade-up animation)
 const cardVariants = {
@@ -18,7 +19,9 @@ const cardVariants = {
 export default function RawGems() {
   return (
     <section className="bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] text-white ">
-      <NavBar/>
+      <div className="relative z-50">
+        <NavBar/>
+      </div>
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl pb-20">
         
         
@@ -47,7 +50,7 @@ export default function RawGems() {
               <div className="overflow-hidden aspect-w-1 aspect-h-1 rounded-md">
                 <img className="object-cover w-[400px] h-[400px] transition-all duration-300 group-hover:scale-105" 
                   src="/images/Crystal Sapphire.jpg" 
-                  alt="Raw Quartz Geode" />
+                  alt="Crystal Sapphire" />
               </div>
               <div className="flex flex-col items-start justify-between mt-3 space-y-1">
                 <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide">
@@ -64,7 +67,7 @@ export default function RawGems() {
               <div className="overflow-hidden aspect-w-1 aspect-h-1 rounded-md">
                 <img className="object-cover w-[400px] h-[400px] transition-all duration-300 group-hover:scale-105" 
                   src="/images/Geuda Stones.jpg" 
-                  alt="Raw Quartz Geode" />
+                  alt="Geuda Stones" />
               </div>
               <div className="flex flex-col items-start justify-between mt-3 space-y-1">
                 <h3 className="text-sm sm:text-base md:text-lg font-semibold font-serif tracking-wide">
@@ -112,6 +115,7 @@ export default function RawGems() {
           </motion.div>
         </div>
       </div>
+      <Footer/>
     </section>
   )
 }

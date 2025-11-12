@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import NavBar from "./Components/NavBar";
 import { motion } from "framer-motion";
+import Footer from "./Components/Footer";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -8,36 +9,52 @@ const cardVariants = {
 };
 
 const ITEMS = {
-  Necklaces: [
-    { id: 1, name: "Celestial Pendant Necklace", img: "/images/jewels/necklace-1.jpg", desc: "14k gold chain with sapphire accent." },
-    { id: 2, name: "Pearl Strand", img: "/images/jewels/necklace-2.jpg", desc: "Lustrous freshwater pearls." },
-    { id: 3, name: "Diamond Solitaire", img: "/images/jewels/necklace-3.jpg", desc: "Classic solitaire on platinum chain." },
-  ],
   Rings: [
-    { id: 4, name: "Emerald Eternity Band", img: "/images/jewels/ring-1.jpg", desc: "White gold band with full-circle emeralds." },
-    { id: 5, name: "Rose Gold Stack", img: "/images/jewels/ring-2.jpg", desc: "Minimal, perfect for stacking." },
-    { id: 6, name: "Garnet Signet", img: "/images/jewels/ring-3.jpg", desc: "Sterling silver with deep red garnet." },
+    {
+      id: 4,
+      name: "Blue Sapphire ring",
+      img: "/images/jewellery/Blue Sapphire ring.jpg",
+      desc: "A stunning Ceylon blue sapphire set on a white gold band, crafted to highlight timeless elegance.",
+    },
+    {
+      id: 5,
+      name: "Geuda Gem ring",
+      img: "/images/jewellery/Geuda Gem ring.jpg",
+      desc: "A rare Sri Lankan Geuda gemstone set in a delicate design — perfect for daily wear or special occasions.",
+    },
+    {
+      id: 6,
+      name: "Moonstone ring",
+      img: "/images/jewellery/Moonstone ring.jpg",
+      desc: "Handcrafted sterling silver ring featuring a natural moonstone that radiates soft, ethereal charm.",
+    },
+    {
+      id: 7,
+      name: "Yellow Sapphire ring",
+      img: "/images/jewellery/Yellow Sapphire ring.jpg",
+      desc: "Brilliant yellow sapphire ring symbolizing prosperity and warmth, set in high-quality silver.",
+    },
   ],
+
   Pendants: [
-    { id: 7, name: "Moonstone Glow Pendant", img: "/images/jewels/pendant-1.jpg", desc: "Ethereal iridescence, bezel set." },
-    { id: 8, name: "Pink Sapphire Heart", img: "/images/jewels/pendant-2.jpg", desc: "Romantic hues, fine finish." },
-    { id: 9, name: "Blue Sapphire Teardrop", img: "/images/jewels/pendant-3.jpg", desc: "Oceanic brilliance in teardrop cut." },
+    {
+      id: 8,
+      name: "Blue Sapphire Pendant",
+      img: "/images/jewellery/Blue Sapphire Pendent.jpg",
+      desc: "A graceful pendant featuring a vibrant blue sapphire in a classic bezel setting, representing Sri Lankan craftsmanship.",
+    },
   ],
 };
 
-
 export default function Jewellery() {
-  const categories = ["Necklaces", "Rings", "Pendants"];
+  const categories = ["Rings", "Pendants"];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
-
   const list = useMemo(() => ITEMS[activeCategory] ?? [], [activeCategory]);
 
   return (
     <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#0b0b0b] via-[#111] to-[#000] text-white">
-        <NavBar />
+      <NavBar />
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl pb-20">
-        
-
         {/* Title */}
         <div className="max-w-6xl mx-auto text-center pt-10 pb-0">
           <h2 className="text-2xl font-bold text-[#D4AF37] sm:text-4xl font-serif tracking-wide">
@@ -55,10 +72,11 @@ export default function Jewellery() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`py-3 px-4 text-base font-medium whitespace-nowrap transition-all duration-200
-                  ${activeCategory === cat
+                className={`py-3 px-4 text-base font-medium whitespace-nowrap transition-all duration-200 ${
+                  activeCategory === cat
                     ? "border-b-2 border-[#D4AF37] text-[#D4AF37]"
-                    : "text-gray-300 hover:text-[#D4AF37] border-b-2 border-transparent"}`}
+                    : "text-gray-300 hover:text-[#D4AF37] border-b-2 border-transparent"
+                }`}
               >
                 {cat}
               </button>
@@ -69,7 +87,7 @@ export default function Jewellery() {
         {/* Grid */}
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <motion.div
-            key={activeCategory} 
+            key={activeCategory}
             className="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-6 lg:grid-cols-3"
             variants={cardVariants}
             initial="hidden"
@@ -85,7 +103,8 @@ export default function Jewellery() {
                       src={item.img}
                       alt={item.name}
                       onError={(e) => {
-                        e.currentTarget.src = "https://placehold.co/400x400/1a1a1a/777?text=Image+Not+Found";
+                        e.currentTarget.src =
+                          "https://placehold.co/400x400/1a1a1a/777?text=Image+Not+Found";
                       }}
                     />
                   </div>
@@ -107,6 +126,7 @@ export default function Jewellery() {
           </motion.div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

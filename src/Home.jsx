@@ -298,7 +298,8 @@ export default function Home() {
 
 
       <section className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] ">
-          <div class="container px-6 py-12 mx-auto">
+          <div class="container px-6 py-12 mx-auto text-center lg:text-left">
+            
               <div>
                     <h1 className="text-5xl sm:text-5xl font-extrabold text-[#FFD700]">Contact Us</h1> 
                     <h2 className="mt-2 text-2xl font-semibold text-gray-300 md:text-3xl">Get in touch</h2>

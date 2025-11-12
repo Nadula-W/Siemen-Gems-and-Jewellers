@@ -171,11 +171,14 @@ export default function Home() {
         <div className="container mx-auto px-6">
           {/* Header - RETAINS TAILWIND STYLES */}
           <h2 
-            className="text-4xl font-extrabold text-center mb-14 bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent tracking-wide"
+            className="text-4xl font-extrabold text-center mb-7 bg-gradient-to-r from-[#FFD700] to-[#D4AF37] bg-clip-text text-transparent tracking-wide"
           >
             Explore Our Masterpieces
           </h2>
-
+          <p class="text-lg font-normal text-gray-300 max-w-3xl mx-auto mb-5">
+    Discover the brilliance of our curated collection, from raw gems to exquisite finished jewelry.
+  </p>
+          
           {/* AUTO-SCROLL Container */}
           <div 
             className="flex space-x-8 overflow-x-auto scrollbar-hide pb-6 auto-scroll-container" 
@@ -183,7 +186,7 @@ export default function Home() {
  
             <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
               <a 
-                href="/Gems" 
+                href="/cutandpolished" 
                 className="group relative overflow-hidden rounded-xl h-[420px] block"
               >
                 <img src="/images/Amethyst polished.jpg"  alt="Amethyst polished" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
@@ -211,7 +214,7 @@ export default function Home() {
 
             <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
               <a 
-                href="/Collections"
+                href="/cutandpolished"
                 className="group relative overflow-hidden rounded-xl h-[420px] block"
               >
                 <img src="/images/Rose garnets polished.jpg" alt="Rose Garnet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
@@ -225,7 +228,7 @@ export default function Home() {
 
             <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
               <a 
-                href="/Craftsmanship" 
+                href="/cutandpolished" 
                 className="group relative overflow-hidden rounded-xl h-[420px] block"
               >
                 <img src="/images/Moonstone polished.jpg" alt="Moonstone" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
@@ -239,7 +242,7 @@ export default function Home() {
             
             <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
               <a 
-                href="/Gems"
+                href="/cutandpolished"
                 className="group relative overflow-hidden rounded-xl h-[420px] block"
               >
                 <img src="/images/Blue Sapphire Polished.jpg" alt="Blue Sapphire" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
@@ -281,7 +284,7 @@ export default function Home() {
 
             <div className="inline-block flex-shrink-0 w-[300px] sm:w-[360px]">
               <a 
-                href="/Craftsmanship"
+                href="/cutandpolished"
                 className="group relative overflow-hidden rounded-xl h-[420px] block"
               >
                 <img src="/images/Amethyst polished.jpg" alt="Amethyst polished duplicate" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-xl"/>
@@ -298,7 +301,7 @@ export default function Home() {
 
 
       <section className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] ">
-          <div class="container px-6 py-12 mx-auto text-center lg:text-left">
+          <div class="container px-6 py-0 mx-auto text-center lg:text-left">
             
               <div>
                     <h1 className="text-5xl sm:text-5xl font-extrabold text-[#FFD700]">Contact Us</h1> 
@@ -311,7 +314,7 @@ export default function Home() {
                           <img
                               src="/images/icons/email.png"
                               alt="email"
-                              className="w-10 h-10 object-cover rounded-full"
+                              className="w-10 h-10 object-cover rounded-full mx-auto sm:mx-0"
                               />
 
                           <h2 class="mt-4 text-base font-medium text-[#FFD700]">Email</h2>
@@ -323,7 +326,7 @@ export default function Home() {
                           <img
                               src="/images/icons/phone.png"
                               alt="email"
-                              className="w-10 h-10 object-cover rounded-full"
+                              className="w-10 h-10 object-cover rounded-full mx-auto sm:mx-0"
                               />
                           <h2 class="mt-4 text-base font-medium text-[#FFD700]">Phone No</h2>
                           <p class="mt-2 text-sm text-white-500 dark:text-white-400">Mon-Fri from 8am to 5pm</p>
@@ -335,7 +338,7 @@ export default function Home() {
                           <img
                               src="/images/icons/address.png"
                               alt="email"
-                              className="w-10 h-10 object-cover rounded-full"
+                              className="w-10 h-10 object-cover rounded-full mx-auto sm:mx-0"
                               />
 
                           <h2 class="mt-4 text-base font-medium text-[#FFD700]">Address</h2>

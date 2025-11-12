@@ -12,9 +12,7 @@
   animation: autoScrollRight 30s linear infinite;
   
   width: max-content; 
-  &:hover {
-    animation-play-state: paused;
-  }
+ 
 }
 
 .scrollbar-hide::-webkit-scrollbar {

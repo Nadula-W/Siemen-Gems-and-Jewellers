@@ -49,7 +49,7 @@ export default function Footer() {
 
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-2">
             <a
-                href="#"
+                href="https://instagram.com/YOUR_INSTAGRAM_PAGE"
                 className="text-gray-500 hover:text-[#FFD700] transition-colors"
             >
                 <img
@@ -61,7 +61,7 @@ export default function Footer() {
             </a>
 
             <a
-                href="#"
+                href="https://instagram.com/YOUR_INSTAGRAM_PAGE"
                 className="text-gray-500 hover:text-[#FFD700] transition-colors"
             >
                 <img
@@ -73,7 +73,7 @@ export default function Footer() {
             </a>
 
             <a
-                href="#"
+                href="https://instagram.com/YOUR_INSTAGRAM_PAGE"
                 className="text-gray-500 hover:text-[#FFD700] transition-colors"
             >
                 <img
@@ -85,7 +85,7 @@ export default function Footer() {
             </a>
 
             <a
-                href="#"
+                href="https://instagram.com/YOUR_INSTAGRAM_PAGE"
                 className="text-gray-500 hover:text-[#FFD700] transition-colors"
             >
                 <img

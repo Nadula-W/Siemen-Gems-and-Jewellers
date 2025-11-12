@@ -148,7 +148,7 @@ export default function Home() {
             {/* JEWELLERY - ANIMATED */}
             <motion.a href="/Jewellery" className="group relative overflow-hidden rounded-xl h-[480px]" variants={gridItemVariants}>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKBab99DVstDnpzAVJD4-Wstlzui790HIw&s"
+                src="https://images.jdmagicbox.com/quickquotes/images_main/traditional-temple-jewellery-with-neck-piece-and-earrings-2222963667-uzpiinpc.jpg"
                 alt="Fine Jewellery"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />

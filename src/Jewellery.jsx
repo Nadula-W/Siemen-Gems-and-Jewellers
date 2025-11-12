@@ -88,7 +88,7 @@ export default function Jewellery() {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <motion.div
             key={activeCategory}
-            className="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-6 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 mt-10 lg:mt-16 lg:gap-6 lg:grid-cols-3"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"

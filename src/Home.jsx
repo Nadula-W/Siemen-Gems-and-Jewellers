@@ -296,6 +296,71 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="py-20 bg-gradient-to-b from-[#0b0b0b] to-[#1a1a1a] ">
+          <div class="container px-6 py-12 mx-auto">
+              <div>
+                    <h1 className="text-5xl sm:text-5xl font-extrabold text-[#FFD700]">Contact Us</h1> 
+                    <h2 className="mt-2 text-2xl font-semibold text-gray-300 md:text-3xl">Get in touch</h2>
+                </div>
+
+              <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                  <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
+                      <div>
+                          <img
+                              src="/images/icons/email.png"
+                              alt="email"
+                              className="w-10 h-10 object-cover rounded-full"
+                              />
+
+                          <h2 class="mt-4 text-base font-medium text-[#FFD700]">Email</h2>
+                          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Our friendly team is here to help.</p>
+                          <p class="mt-2 text-sm text-white-500 dark:text-white-400">hello@damsith.com</p>
+                      </div>
+
+                      <div>
+                          <img
+                              src="/images/icons/phone.png"
+                              alt="email"
+                              className="w-10 h-10 object-cover rounded-full"
+                              />
+                          <h2 class="mt-4 text-base font-medium text-[#FFD700]">Phone No</h2>
+                          <p class="mt-2 text-sm text-white-500 dark:text-white-400">Mon-Fri from 8am to 5pm</p>
+                          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">+94 773847294.</p>
+                          
+                      </div>
+
+                      <div>
+                          <img
+                              src="/images/icons/address.png"
+                              alt="email"
+                              className="w-10 h-10 object-cover rounded-full"
+                              />
+
+                          <h2 class="mt-4 text-base font-medium text-[#FFD700]">Address</h2>
+                          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Come say hello at our office HQ.</p>
+                          <p class="mt-2 text-sm text-white-500 dark:text-white-400">Come say hello at our office HQ</p>
+                      </div>
+                  </div>
+
+                  <div class="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
+                      <iframe 
+                          width="100%" 
+                          height="100%" 
+                          frameborder="0" 
+                          title="Office Location Map" 
+                          scrolling="no" 
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7920.504680295925!2d79.91460438981062!3d6.979523371455704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257f8b2eacd4b%3A0x2f0945cfc64b4176!2sEgoda%20Eriyawetiya!5e0!3m2!1sen!2slk!4v1762968393216!5m2!1sen!2slk" 
+                           
+                          allowfullscreen="" 
+                          loading="lazy" 
+                          referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                  </div>
+              </div>
+          </div>
+      </section>
+
       <Footer/>
       
     </main>

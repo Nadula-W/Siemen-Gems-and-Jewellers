@@ -176,9 +176,9 @@ export default function Home() {
             Explore Our Masterpieces
           </h2>
           <p class="text-lg font-normal text-gray-300 max-w-3xl mx-auto mb-5">
-    Discover the brilliance of our curated collection, from raw gems to exquisite finished jewelry.
-  </p>
-          
+            Discover the brilliance of our curated collection, from raw gems to exquisite finished jewelry.
+          </p>
+                  
           {/* AUTO-SCROLL Container */}
           <div 
             className="flex space-x-8 overflow-x-auto scrollbar-hide pb-6 auto-scroll-container" 
@@ -354,8 +354,8 @@ export default function Home() {
                           frameborder="0" 
                           title="Office Location Map" 
                           scrolling="no" 
-                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7920.504680295925!2d79.91460438981062!3d6.979523371455704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257f8b2eacd4b%3A0x2f0945cfc64b4176!2sEgoda%20Eriyawetiya!5e0!3m2!1sen!2slk!4v1762968393216!5m2!1sen!2slk" 
-                           
+                          marginheight="0"  
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.287148703034!2d79.91297847462633!3d6.975408517747671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597c8dde7e47%3A0x341e7e820c46d3ed!2sUniversity%20of%20Kelaniya!5e0!3m2!1sen!2slk!4v1762974827693!5m2!1sen!2slk"                           
                           allowfullscreen="" 
                           loading="lazy" 
                           referrerpolicy="no-referrer-when-downgrade">

@@ -76,8 +76,8 @@ export default function Home() {
           <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-[#D4AF37]/30 to-transparent blur-3xl"></div>
 
           <img
-            src="/images/header1.jpg"
-            alt="Fine gold jewellery"
+            src="/images/header1.JPG"
+            alt="Header image"
             loading="eager"
             className="
               relative w-full

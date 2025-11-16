@@ -33,7 +33,7 @@ export default function Footer() {
             </a>
             
             <a href="/contact-us" className="text-[14px] md:text-[18px] font-semibold uppercase whitespace-nowrap hover:text-[#FFD700] transition-colors transition duration-300">
-              Contact Us
+              About Us
             </a>
           </div>
         </div>

@@ -7,7 +7,7 @@ const navItems = [
     { name: "Raw Gem Stones", href: "/RawGems" },
     { name: "Gems", href: "/CutandPolished" },
     { name: "Jewellery", href: "/Jewellery" },
-    { name: "Contact", href: "#" },
+    { name: "About Us", href: "/" },
 ];
 
 export default function NavBar() {

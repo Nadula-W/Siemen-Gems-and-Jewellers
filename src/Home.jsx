@@ -94,8 +94,144 @@ export default function Home() {
             "
           />
         </motion.div>
+        </section>
 
-</section>
+        <motion.section
+            id="legacy"
+            className="py-16 lg:py-24 bg-gradient-to-b from-transparent to-[#060606]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }} 
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { 
+                  duration: 0.8,
+                  ease: "easeOut",
+                  staggerChildren: 0.2,
+                },
+              },
+            }}
+        >
+            <div className="container mx-auto px-6">
+              <motion.div
+                className="
+                  mx-auto max-w-4xl rounded-2xl overflow-hidden 
+                  border border-[#262626] 
+                  /* ADDED GOLD GLOW HERE */
+                  shadow-[0_0_40px_rgba(212,175,55,0.4)]
+                  transition-shadow duration-700 ease-out
+                "
+                variants={{ 
+                  hidden: { opacity: 0, scale: 0.98 }, 
+                  visible: { 
+                    opacity: 1, 
+                    scale: 1, 
+                    transition: { duration: 0.6, ease: "easeOut" } 
+                  } 
+                }}
+              >
+                <div className="relative">
+                  {/* IMAGE OR PLACEHOLDER HERE (if any) */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
+                </div>
+
+                <div className="p-6 lg:p-10 bg-gradient-to-t from-[#060606] to-transparent">
+                  <motion.span
+                    className="inline-block w-12 h-1 bg-[#D4AF37] rounded-full mb-4 lg:mb-6"
+                    variants={{ 
+                      hidden: { scaleX: 0 }, 
+                      visible: { 
+                        scaleX: 1, 
+                        transition: { duration: 0.5, ease: "easeOut" } 
+                      } 
+                    }}
+                  />
+
+                  <motion.h3
+                    className="text-[#FFD700] text-2xl lg:text-4xl font-bold mb-3 lg:mb-4 tracking-tight"
+                    variants={{ 
+                      hidden: { y: 15, opacity: 0 }, 
+                      visible: { 
+                        y: 0, 
+                        opacity: 1, 
+                        transition: { duration: 0.7, ease: "easeOut" } 
+                      } 
+                    }}
+                  >
+                    Our Story — Inspired by Heritage
+
+                  </motion.h3>
+
+                  <motion.p
+                    className="text-gray-300 leading-relaxed text-base lg:text-lg mb-6 "
+                    variants={{ 
+                      hidden: { y: 15, opacity: 0 }, 
+                      visible: { 
+                        y: 0, 
+                        opacity: 1, 
+                        transition: { duration: 0.7, ease: "easeOut" } 
+                      } 
+                    }}
+                  >
+                    Our jewellery is made using carefully chosen stones and 
+                    traditional skills passed down through generations. Each piece is created to be treasured for a long time.
+                  </motion.p>
+
+                  <motion.div
+                    className="flex flex-col sm:flex-row items-start sm:items-center gap-3"
+                    variants={{ 
+                      hidden: { opacity: 0, y: 15 }, 
+                      visible: { 
+                        opacity: 1, 
+                        y: 0, 
+                        transition: { duration: 0.6, ease: "easeOut" } 
+                      } 
+                    }}
+                  >
+                    <a
+                      href="/OurStory"
+                      className="
+                        inline-flex items-center gap-3 px-5 py-2 rounded-full 
+                        bg-transparent border border-[#D4AF37] text-[#D4AF37] 
+                        font-semibold transition text-sm lg:text-base
+                        
+                       
+                        hover:bg-[#D4AF37] 
+                        hover:text-black 
+                        hover:shadow-[0_0_15px_rgba(212,175,55,0.6)]
+                        hover:scale-[1.02]
+                      "
+                      aria-label="Read our full story"
+                    >
+                      Read Our Full Story
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </a>
+
+                    <button
+                      onClick={() => {
+                        alert("Open timeline modal or navigate to timeline page (replace this placeholder).");
+                      }}
+                      className="
+                        inline-flex items-center gap-2 px-4 py-2 rounded-full 
+                        bg-[#D4AF37] text-black font-medium transition text-sm lg:text-base
+                        
+                        hover:bg-[#FFD700] /* Slightly lighter gold on hover */
+                        hover:shadow-[0_0_15px_rgba(212,175,55,0.8)]
+                        hover:scale-[1.02]
+                      "
+                    >
+                      Timeline
+                    </button>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </div>
+        </motion.section>
 
 
 
